@@ -10,18 +10,18 @@ const FlashIcon = (props) => (
 // Hero Section কম্পোনেন্ট
 const HeroSection = () => {
   return (
-    <section className="mt-4">
+    <section className="mt-4 px-4 sm:px-6 lg:px-8">
       {/* গ্রিড কন্টেইনার: বড় স্ক্রিনে 3 কলাম (3/4 + 1/4), ছোট স্ক্রিনে 1 কলাম */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         
         {/* বাম অংশ: প্রধান ব্যানার/স্লাইডার (LG স্ক্রিনে 3 কলাম নেয়) */}
         <div className="lg:col-span-3 bg-red-100 rounded-xl overflow-hidden shadow-lg h-80 relative">
-          {/* স্লাইডারের প্লেসহোল্ডার ইমেজ */}
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/1200x500/A00000/FFFFFF?text=Biggest+Sale+Starts+Today')" }}></div>
+          {/* স্লাইডারের প্লেসহোল্ডার ইমেজ - Next.js এর জন্য নির্ভরযোগ্য প্লেসহোল্ডার ব্যবহার করা হলো */}
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://placehold.co/1200x500/A00000/FFFFFF?text=Biggest+Sale+Starts+Today')" }}></div>
           
-          <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center p-12 text-white">
-            <p className="text-xl font-semibold uppercase tracking-widest text-red-300">অবিশ্বাস্য ডিল</p>
-            <h1 className="text-5xl md:text-6xl font-extrabold mt-2 leading-tight">
+          <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center p-8 md:p-12 text-white">
+            <p className="text-lg md:text-xl font-semibold uppercase tracking-widest text-red-300">অবিশ্বাস্য ডিল</p>
+            <h1 className="text-4xl md:text-6xl font-extrabold mt-2 leading-tight">
               ৫০% পর্যন্ত ছাড় <br/> সকল পণ্যে
             </h1>
             <button className="mt-6 w-fit px-6 py-3 bg-white text-red-600 font-bold text-lg rounded-full shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">

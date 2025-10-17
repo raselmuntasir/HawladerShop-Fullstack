@@ -1,4 +1,4 @@
-import '../../styles/globals.css'; // পাথ পরিবর্তন করা হয়েছে
+import '../../styles/globals.css'; // দু'ধাপ পেছনে গিয়ে styles ফোল্ডার অ্যাক্সেস করা হচ্ছে
 import type { AppProps } from 'next/app';
 import React from 'react';
 
