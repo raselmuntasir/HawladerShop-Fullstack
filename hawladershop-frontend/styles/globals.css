@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* এখানে আগে থেকে থাকা অন্যান্য CSS কোড থাকলে সেগুলো এই লাইনের নিচে রাখুন */
+/* ... */
